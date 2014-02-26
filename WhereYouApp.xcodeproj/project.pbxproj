@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		639904AF18BD807F0074BB69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639904AE18BD807F0074BB69 /* Main.storyboard */; };
+		639904B118BE64BA0074BB69 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639904B018BE64BA0074BB69 /* MapKit.framework */; };
 		63E534CF18BD5D7100F14680 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E534CE18BD5D7100F14680 /* Foundation.framework */; };
 		63E534D118BD5D7200F14680 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E534D018BD5D7200F14680 /* CoreGraphics.framework */; };
 		63E534D318BD5D7200F14680 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E534D218BD5D7200F14680 /* UIKit.framework */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		639904AE18BD807F0074BB69 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		639904B018BE64BA0074BB69 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		63E534CB18BD5D7100F14680 /* WhereYouApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereYouApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E534CE18BD5D7100F14680 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		63E534D018BD5D7200F14680 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639904B118BE64BA0074BB69 /* MapKit.framework in Frameworks */,
 				63E534D118BD5D7200F14680 /* CoreGraphics.framework in Frameworks */,
 				63E534D518BD5D7200F14680 /* CoreData.framework in Frameworks */,
 				63E534D318BD5D7200F14680 /* UIKit.framework in Frameworks */,
@@ -106,6 +109,7 @@
 		63E534CD18BD5D7100F14680 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				639904B018BE64BA0074BB69 /* MapKit.framework */,
 				63E534CE18BD5D7100F14680 /* Foundation.framework */,
 				63E534D018BD5D7200F14680 /* CoreGraphics.framework */,
 				63E534D218BD5D7200F14680 /* UIKit.framework */,
