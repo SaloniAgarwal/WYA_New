@@ -27,12 +27,12 @@
             </objects>
             <point key="canvasLocation" x="304" y="92"/>
         </scene>
-        <!--Table View Controller - Friends List-->
+        <!--Add Friends View Controller - Friends List-->
         <scene sceneID="LVO-V2-bRW">
             <objects>
-                <tableViewController title="Friends List" id="cDT-29-CcS" sceneMemberID="viewController">
+                <tableViewController title="Friends List" id="cDT-29-CcS" customClass="AddFriendsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="6pz-P9-BiI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections/>
@@ -54,16 +54,16 @@
             </objects>
             <point key="canvasLocation" x="922" y="-408"/>
         </scene>
-        <!--View Controller - Add Friends-->
+        <!--Add Friends - Add Friends-->
         <scene sceneID="fnc-Z8-lrA">
             <objects>
-                <viewController id="SIs-bP-guY" sceneMemberID="viewController">
+                <viewController id="SIs-bP-guY" customClass="AddFriends" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ipd-5w-vFI"/>
                         <viewControllerLayoutGuide type="bottom" id="SBi-Ow-Jya"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zmY-wS-Y3e">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Friends" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dJi-bl-0XR">
@@ -81,20 +81,29 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Friends" id="Tac-J7-3uN">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Nxx-CE-IPs"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="3Yq-hC-5z5"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Nxx-CE-IPs">
+                            <connections>
+                                <segue destination="PKI-RY-zSj" kind="unwind" unwindAction="unwindToList:" id="Ecp-lQ-sqx"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="3Yq-hC-5z5">
+                            <connections>
+                                <segue destination="PKI-RY-zSj" kind="unwind" unwindAction="unwindToList:" id="Gw4-OU-w1x"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="08l-Md-QKO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="PKI-RY-zSj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1907" y="-408"/>
+            <point key="canvasLocation" x="1867" y="-370"/>
         </scene>
         <!--Table View Controller - Groups List-->
         <scene sceneID="QUK-Rz-iun">
             <objects>
                 <tableViewController title="Groups List" id="5Hi-kC-fIY" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="RAq-fH-82i">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
@@ -145,12 +154,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohx-nQ-i6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1381" y="-408"/>
+            <point key="canvasLocation" x="1375" y="-370"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>
