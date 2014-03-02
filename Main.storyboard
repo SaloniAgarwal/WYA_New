@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ySb-uq-72d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ySb-uq-72d">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -8,20 +8,56 @@
         <scene sceneID="IMS-J4-Eo3">
             <objects>
                 <viewController title="Map" id="edQ-7E-gYY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ts0-gP-ftt"/>
+                        <viewControllerLayoutGuide type="bottom" id="qUS-eN-kUu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IFN-ur-iFD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCW-BE-gVJ">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Groups" id="1Eg-fB-Thy">
+                                        <connections>
+                                            <segue destination="5Hi-kC-fIY" kind="push" id="9M0-LC-kHM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="J7h-hH-3ij"/>
+                                    <barButtonItem title="Notifications" id="54l-tW-Jch"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="e7E-q3-ktn"/>
+                                    <barButtonItem title="Friends" id="wuK-Br-jcC">
+                                        <connections>
+                                            <segue destination="cDT-29-CcS" kind="push" id="NJg-dc-op1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lWh-dX-1Jf">
+                                <rect key="frame" x="0.0" y="63" width="320" height="461"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lWh-dX-1Jf" firstAttribute="leading" secondItem="IFN-ur-iFD" secondAttribute="leading" id="1FF-IY-64t"/>
+                            <constraint firstItem="qUS-eN-kUu" firstAttribute="top" secondItem="lCW-BE-gVJ" secondAttribute="bottom" id="Dst-cg-hiM"/>
+                            <constraint firstItem="ts0-gP-ftt" firstAttribute="top" secondItem="lWh-dX-1Jf" secondAttribute="bottom" constant="-460" id="HiP-uc-5xZ"/>
+                            <constraint firstItem="lWh-dX-1Jf" firstAttribute="leading" secondItem="lCW-BE-gVJ" secondAttribute="leading" id="PSX-oG-sCE"/>
+                            <constraint firstItem="qUS-eN-kUu" firstAttribute="top" secondItem="lWh-dX-1Jf" secondAttribute="bottom" constant="44" id="aCQ-rh-kld"/>
+                            <constraint firstItem="lWh-dX-1Jf" firstAttribute="top" secondItem="IFN-ur-iFD" secondAttribute="top" constant="63" id="jIz-ST-BCX"/>
+                            <constraint firstAttribute="trailing" secondItem="lWh-dX-1Jf" secondAttribute="trailing" id="p2F-7y-w2h"/>
+                            <constraint firstItem="lWh-dX-1Jf" firstAttribute="trailing" secondItem="lCW-BE-gVJ" secondAttribute="trailing" id="tb0-lR-88t"/>
+                            <constraint firstItem="lCW-BE-gVJ" firstAttribute="top" secondItem="ts0-gP-ftt" secondAttribute="bottom" constant="460" id="yMV-b2-MQu"/>
+                        </constraints>
+                    </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Map" id="MMi-yf-7C9">
-                        <barButtonItem key="leftBarButtonItem" title="Groups" id="1Eg-fB-Thy">
-                            <connections>
-                                <segue destination="5Hi-kC-fIY" kind="push" id="9M0-LC-kHM"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Friends" id="wuK-Br-jcC">
-                            <connections>
-                                <segue destination="cDT-29-CcS" kind="push" id="NJg-dc-op1"/>
-                            </connections>
-                        </barButtonItem>
+                    <navigationItem key="navigationItem" title="Map" id="BcV-mE-Tw8">
+                        <barButtonItem key="leftBarButtonItem" title="Settings" id="Dd9-NO-ZeL"/>
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="4Bp-ng-yd3"/>
                     </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="03t-5Q-ez0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,7 +98,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Friends" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dJi-bl-0XR">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Friends" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dJi-bl-0XR">
                                 <rect key="frame" x="20" y="70" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -71,9 +107,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dJi-bl-0XR" firstAttribute="top" secondItem="ipd-5w-vFI" secondAttribute="bottom" constant="6" id="nr9-Ir-Klu"/>
-                            <constraint firstAttribute="trailing" secondItem="dJi-bl-0XR" secondAttribute="trailing" constant="20" id="vVP-Y0-YjY"/>
-                            <constraint firstItem="dJi-bl-0XR" firstAttribute="leading" secondItem="zmY-wS-Y3e" secondAttribute="leading" constant="20" id="x6B-1c-8hl"/>
+                            <constraint firstAttribute="trailing" secondItem="dJi-bl-0XR" secondAttribute="trailing" constant="20" symbolic="YES" id="0Rx-v0-F4N"/>
+                            <constraint firstItem="dJi-bl-0XR" firstAttribute="leading" secondItem="zmY-wS-Y3e" secondAttribute="leading" constant="20" symbolic="YES" id="8RO-2o-pQf"/>
+                            <constraint firstItem="dJi-bl-0XR" firstAttribute="top" secondItem="ipd-5w-vFI" secondAttribute="bottom" constant="50" id="Syy-Fx-Yd6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Friends" id="Tac-J7-3uN">
