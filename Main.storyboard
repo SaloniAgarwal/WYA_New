@@ -50,10 +50,29 @@
             </objects>
             <point key="canvasLocation" x="922" y="-408"/>
         </scene>
-        <!--Table View Controller - Groups List-->
+        <!--Groups View Controller - Groups List-->
         <scene sceneID="QUK-Rz-iun">
             <objects>
-                <tableViewController title="Groups List" id="5Hi-kC-fIY" sceneMemberID="viewController">
+                <tableViewController title="Groups List" id="5Hi-kC-fIY" customClass="WYAGroupsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ee9-I4-WY3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListPrototypeCell" id="qYP-o1-sWn">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qYP-o1-sWn" id="CU9-NT-RIt">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5Hi-kC-fIY" id="z7w-P1-2ou"/>
+                            <outlet property="delegate" destination="5Hi-kC-fIY" id="BIe-a7-vg6"/>
+                        </connections>
+                    </tableView>
                     <navigationItem key="navigationItem" title="Groups" id="sZB-gx-DfH">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="bjQ-kT-U8X">
                             <connections>
@@ -66,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="940" y="325"/>
         </scene>
-        <!--View Controller - Add Groups-->
+        <!--Add Groups View Controller - Add Groups-->
         <scene sceneID="khf-13-mcY">
             <objects>
-                <viewController id="ahK-qE-6eb" sceneMemberID="viewController">
+                <viewController id="ahK-qE-6eb" customClass="WYAAddGroupsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yCG-bG-ohM"/>
                         <viewControllerLayoutGuide type="bottom" id="kYF-KP-hEK"/>
@@ -93,11 +112,24 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Groups" id="zIN-28-KHZ">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="loZ-4X-EsQ"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="qjS-sL-Y48"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="loZ-4X-EsQ">
+                            <connections>
+                                <segue destination="rbo-Ey-FnD" kind="unwind" unwindAction="unwindToGroups:" id="8hn-Xc-6GF"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="qjS-sL-Y48">
+                            <connections>
+                                <segue destination="rbo-Ey-FnD" kind="unwind" unwindAction="unwindToGroups:" id="xk4-ri-U8c"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="doneButton" destination="qjS-sL-Y48" id="W0B-4o-Kdm"/>
+                        <outlet property="textField" destination="TDp-LC-5UX" id="bPP-oE-B3H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KtB-2K-wvm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rbo-Ey-FnD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2524" y="332"/>
         </scene>
