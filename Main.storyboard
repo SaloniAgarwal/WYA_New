@@ -27,14 +27,24 @@
             </objects>
             <point key="canvasLocation" x="304" y="92"/>
         </scene>
-        <!--Add Friends View Controller - Friends List-->
+        <!--Friend List View Controller - Friends List-->
         <scene sceneID="LVO-V2-bRW">
             <objects>
-                <tableViewController title="Friends List" id="cDT-29-CcS" customClass="AddFriendsViewController" sceneMemberID="viewController">
+                <tableViewController title="Friends List" id="cDT-29-CcS" customClass="WYAFriendListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="6pz-P9-BiI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ListPrototypeCell" id="grq-Fp-OAk">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="grq-Fp-OAk" id="xGz-hb-ZAd">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
                         <sections/>
                         <connections>
                             <outlet property="dataSource" destination="cDT-29-CcS" id="0rY-kA-c6S"/>
@@ -45,7 +55,7 @@
                     <navigationItem key="navigationItem" title="Friends" id="fWe-ve-Luf">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Yy8-fR-PzX">
                             <connections>
-                                <segue destination="kwj-Ng-0ON" kind="modal" id="vxN-XW-C1u"/>
+                                <segue destination="NbN-ZE-305" kind="modal" id="JTN-b7-tDr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -54,20 +64,20 @@
             </objects>
             <point key="canvasLocation" x="922" y="-408"/>
         </scene>
-        <!--Add Friends - Add Friends-->
-        <scene sceneID="fnc-Z8-lrA">
+        <!--Add Friend Name - Add Friend-->
+        <scene sceneID="SXb-L6-60G">
             <objects>
-                <viewController id="SIs-bP-guY" customClass="AddFriends" sceneMemberID="viewController">
+                <viewController id="tcQ-jk-dbn" customClass="WYAAddFriendName" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ipd-5w-vFI"/>
-                        <viewControllerLayoutGuide type="bottom" id="SBi-Ow-Jya"/>
+                        <viewControllerLayoutGuide type="top" id="MIF-st-FxX"/>
+                        <viewControllerLayoutGuide type="bottom" id="ndP-UH-ZMi"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zmY-wS-Y3e">
+                    <view key="view" contentMode="scaleToFill" id="Q6x-Mo-Be5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Friends" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dJi-bl-0XR">
-                                <rect key="frame" x="20" y="70" width="280" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a Friend" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bva-vb-tZ4">
+                                <rect key="frame" x="20" y="76" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -75,28 +85,32 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dJi-bl-0XR" firstAttribute="top" secondItem="ipd-5w-vFI" secondAttribute="bottom" constant="6" id="nr9-Ir-Klu"/>
-                            <constraint firstAttribute="trailing" secondItem="dJi-bl-0XR" secondAttribute="trailing" constant="20" id="vVP-Y0-YjY"/>
-                            <constraint firstItem="dJi-bl-0XR" firstAttribute="leading" secondItem="zmY-wS-Y3e" secondAttribute="leading" constant="20" id="x6B-1c-8hl"/>
+                            <constraint firstAttribute="trailing" secondItem="bva-vb-tZ4" secondAttribute="trailing" constant="20" id="0to-u6-WVa"/>
+                            <constraint firstItem="bva-vb-tZ4" firstAttribute="leading" secondItem="Q6x-Mo-Be5" secondAttribute="leading" constant="20" id="6U2-x9-sh4"/>
+                            <constraint firstItem="bva-vb-tZ4" firstAttribute="top" secondItem="MIF-st-FxX" secondAttribute="bottom" constant="12" id="pz4-0Q-pES"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Add Friends" id="Tac-J7-3uN">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Nxx-CE-IPs">
+                    <navigationItem key="navigationItem" title="Add Friend" id="fc4-bQ-78U">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="hMN-vH-BqV">
                             <connections>
-                                <segue destination="PKI-RY-zSj" kind="unwind" unwindAction="unwindToList:" id="Ecp-lQ-sqx"/>
+                                <segue destination="4ys-zO-AO4" kind="unwind" unwindAction="unwindToList:" id="92L-N9-Lgr"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="3Yq-hC-5z5">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="5tu-bp-TiU">
                             <connections>
-                                <segue destination="PKI-RY-zSj" kind="unwind" unwindAction="unwindToList:" id="Gw4-OU-w1x"/>
+                                <segue destination="4ys-zO-AO4" kind="unwind" unwindAction="unwindToList:" id="cbp-sn-Fn1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="doneButton" destination="5tu-bp-TiU" id="9KT-1G-xmP"/>
+                        <outlet property="textField" destination="bva-vb-tZ4" id="Gqs-1T-pmJ"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="08l-Md-QKO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="PKI-RY-zSj" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W3s-aD-4xw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="4ys-zO-AO4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1867" y="-370"/>
+            <point key="canvasLocation" x="1837" y="-408"/>
         </scene>
         <!--Table View Controller - Groups List-->
         <scene sceneID="QUK-Rz-iun">
@@ -138,23 +152,22 @@
             <point key="canvasLocation" x="-222" y="92"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="uAA-q8-fYY">
+        <scene sceneID="dkL-M1-EKs">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kwj-Ng-0ON" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NbN-ZE-305" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="cAH-E8-ZTI"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kYz-Af-OHo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x6s-TE-f0e">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="SIs-bP-guY" kind="relationship" relationship="rootViewController" id="gfA-oG-3Wi"/>
+                        <segue destination="tcQ-jk-dbn" kind="relationship" relationship="rootViewController" id="5Es-pC-VCn"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ohx-nQ-i6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qoy-wd-Eyf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1375" y="-370"/>
+            <point key="canvasLocation" x="1311" y="-408"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
