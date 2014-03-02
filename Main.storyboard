@@ -43,11 +43,7 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Friends" id="fWe-ve-Luf">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Yy8-fR-PzX">
-                            <connections>
-                                <segue destination="kwj-Ng-0ON" kind="modal" id="vxN-XW-C1u"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Yy8-fR-PzX"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ye4-R7-rWN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -66,7 +62,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Friends" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dJi-bl-0XR">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Friends" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dJi-bl-0XR">
                                 <rect key="frame" x="20" y="70" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -89,7 +85,7 @@
             </objects>
             <point key="canvasLocation" x="1907" y="-408"/>
         </scene>
-        <!--Table View Controller - Groups List-->
+        <!--Groups View Controller - Groups List-->
         <scene sceneID="QUK-Rz-iun">
             <objects>
                 <tableViewController title="Groups List" id="5Hi-kC-fIY" customClass="WYAGroupsViewController" sceneMemberID="viewController">
@@ -191,23 +187,22 @@
             <point key="canvasLocation" x="-222" y="92"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="uAA-q8-fYY">
+        <scene sceneID="Vdw-ot-JpL">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kwj-Ng-0ON" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r4f-Ik-faq" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="cAH-E8-ZTI"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kYz-Af-OHo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Qd-12-Jub">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="SIs-bP-guY" kind="relationship" relationship="rootViewController" id="gfA-oG-3Wi"/>
+                        <segue destination="ahK-qE-6eb" kind="relationship" relationship="rootViewController" id="tKS-YH-lHa"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ohx-nQ-i6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hqA-1P-V0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1381" y="-408"/>
+            <point key="canvasLocation" x="1838" y="332"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
