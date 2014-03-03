@@ -109,6 +109,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Groups" id="sZB-gx-DfH">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="r6Z-5j-swU"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="bjQ-kT-U8X">
                             <connections>
                                 <segue destination="r4f-Ik-faq" kind="modal" id="uHJ-hx-XLP"/>

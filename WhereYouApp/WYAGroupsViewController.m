@@ -18,6 +18,7 @@
 
 @implementation WYAGroupsViewController
 
+
 - (void)loadInitialData
 {
     WYAGroups *group1 = [[WYAGroups alloc] init];
@@ -40,6 +41,8 @@
     }
 
 }
+
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -95,6 +98,15 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.groupNames removeObjectAtIndex:indexPath.row];
+    [self.tableView reloadData];
+
+}
+
+
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -102,7 +114,8 @@
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-*/
+ */
+
 
 /*
 // Override to support editing the table view.
