@@ -56,7 +56,6 @@
 		63827DF218C2CC4F009F05BF /* WYAMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYAMapViewController.m; sourceTree = "<group>"; };
 		63827DF318C2CC4F009F05BF /* WYAUserAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYAUserAnnotation.h; sourceTree = "<group>"; };
 		63827DF418C2CC4F009F05BF /* WYAUserAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYAUserAnnotation.m; sourceTree = "<group>"; };
-		639904AE18BD807F0074BB69 /* Main1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main1.storyboard; path = "/Users/JeanValjean24601/Dropbox/Poly/CS 9033/WhereYouApp/Main1.storyboard"; sourceTree = "<absolute>"; };
 		639904B018BE64BA0074BB69 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		63E534CB18BD5D7100F14680 /* WhereYouApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereYouApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E534CE18BD5D7100F14680 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -147,17 +146,16 @@
 			isa = PBXGroup;
 			children = (
 				63122B4018C68A1A0084E969 /* Main.storyboard */,
+				63827DF118C2CC4F009F05BF /* WYAMapViewController.h */,
+				63827DF218C2CC4F009F05BF /* WYAMapViewController.m */,
+				63827DF318C2CC4F009F05BF /* WYAUserAnnotation.h */,
+				63827DF418C2CC4F009F05BF /* WYAUserAnnotation.m */,
 				30DA4A8B18C31FDA006E6F2C /* WYAFriendName.h */,
 				30DA4A8C18C31FDA006E6F2C /* WYAFriendName.m */,
 				30DA4A8818C31C92006E6F2C /* WYAFriendListViewController.h */,
 				30DA4A8918C31C92006E6F2C /* WYAFriendListViewController.m */,
 				30DA4A8518C31B1B006E6F2C /* WYAAddFriendName.h */,
 				30DA4A8618C31B1B006E6F2C /* WYAAddFriendName.m */,
-				639904AE18BD807F0074BB69 /* Main1.storyboard */,
-				63827DF118C2CC4F009F05BF /* WYAMapViewController.h */,
-				63827DF218C2CC4F009F05BF /* WYAMapViewController.m */,
-				63827DF318C2CC4F009F05BF /* WYAUserAnnotation.h */,
-				63827DF418C2CC4F009F05BF /* WYAUserAnnotation.m */,
 				F917F4D218C29E6A008302EC /* WYAAddGroupsViewController.h */,
 				F917F4D318C29E6A008302EC /* WYAAddGroupsViewController.m */,
 				F917F4D518C29FAB008302EC /* WYAGroupsViewController.h */,

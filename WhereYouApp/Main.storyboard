@@ -4,68 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller - Friends List-->
-        <scene sceneID="LVO-V2-bRW">
-            <objects>
-                <tableViewController title="Friends List" id="cDT-29-CcS" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="6pz-P9-BiI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="cDT-29-CcS" id="0rY-kA-c6S"/>
-                            <outlet property="delegate" destination="cDT-29-CcS" id="oov-6p-3dF"/>
-                        </connections>
-                    </tableView>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Friends" id="fWe-ve-Luf">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Yy8-fR-PzX">
-                            <connections>
-                                <segue destination="JY0-SQ-LrW" kind="modal" id="2rq-sC-xu9"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ye4-R7-rWN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1448" y="-408"/>
-        </scene>
-        <!--View Controller - Add Friends-->
-        <scene sceneID="fnc-Z8-lrA">
-            <objects>
-                <viewController id="SIs-bP-guY" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ipd-5w-vFI"/>
-                        <viewControllerLayoutGuide type="bottom" id="SBi-Ow-Jya"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zmY-wS-Y3e">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Friends" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dJi-bl-0XR">
-                                <rect key="frame" x="20" y="70" width="280" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="dJi-bl-0XR" secondAttribute="trailing" constant="20" symbolic="YES" id="0Rx-v0-F4N"/>
-                            <constraint firstItem="dJi-bl-0XR" firstAttribute="leading" secondItem="zmY-wS-Y3e" secondAttribute="leading" constant="20" symbolic="YES" id="8RO-2o-pQf"/>
-                            <constraint firstItem="dJi-bl-0XR" firstAttribute="top" secondItem="ipd-5w-vFI" secondAttribute="bottom" constant="50" id="Syy-Fx-Yd6"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Add Friends" id="Tac-J7-3uN">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Nxx-CE-IPs"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="3Yq-hC-5z5"/>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="08l-Md-QKO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2599" y="-408"/>
-        </scene>
         <!--Groups View Controller - Groups List-->
         <scene sceneID="QUK-Rz-iun">
             <objects>
@@ -193,7 +131,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="1lk-RW-CdH"/>
                                     <barButtonItem title="Friends" id="rbD-v2-t7B">
                                         <connections>
-                                            <segue destination="cDT-29-CcS" kind="push" id="zer-HW-NKf"/>
+                                            <segue destination="dxF-dT-Rvb" kind="push" id="VzN-sa-P5J"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -248,23 +186,104 @@
             </objects>
             <point key="canvasLocation" x="179" y="92"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="kau-aE-epb">
+        <!--Friend List View Controller - Friends List-->
+        <scene sceneID="q0P-Mz-YPM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JY0-SQ-LrW" sceneMemberID="viewController">
+                <tableViewController title="Friends List" id="dxF-dT-Rvb" customClass="WYAFriendListViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3sL-zf-e7C">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ListPrototypeCell" id="bAK-Ge-1af">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bAK-Ge-1af" id="rCO-H8-lxm">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="dxF-dT-Rvb" id="QUF-JY-9nt"/>
+                            <outlet property="delegate" destination="dxF-dT-Rvb" id="BMS-zK-QHE"/>
+                        </connections>
+                    </tableView>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qcs-gf-wMo">
+                    <navigationItem key="navigationItem" title="Friends" id="GY9-Xv-Mi3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="a1t-Vf-bAX">
+                            <connections>
+                                <segue destination="T3k-7U-KYj" kind="modal" id="0ia-cW-YSk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zlx-qB-659" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1490" y="-556"/>
+        </scene>
+        <!--Add Friend Name - Add Friend-->
+        <scene sceneID="GWC-ez-CxG">
+            <objects>
+                <viewController id="YSa-9O-BGX" customClass="WYAAddFriendName" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="axY-Ci-6oa"/>
+                        <viewControllerLayoutGuide type="bottom" id="BBA-rW-qgg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZXS-an-upm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a Friend" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hbp-Mx-9z7">
+                                <rect key="frame" x="20" y="76" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hbp-Mx-9z7" firstAttribute="leading" secondItem="ZXS-an-upm" secondAttribute="leading" constant="20" id="4mh-7B-GMd"/>
+                            <constraint firstAttribute="trailing" secondItem="hbp-Mx-9z7" secondAttribute="trailing" constant="20" id="FTo-HU-1fS"/>
+                            <constraint firstItem="hbp-Mx-9z7" firstAttribute="top" secondItem="axY-Ci-6oa" secondAttribute="bottom" constant="12" id="epC-CE-m1F"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Friend" id="O5j-cS-PhJ">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="eMp-P3-5KI">
+                            <connections>
+                                <segue destination="vGb-Av-8lq" kind="unwind" unwindAction="unwindToList:" id="zKu-Zw-WKa"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="GGb-qv-aqf">
+                            <connections>
+                                <segue destination="vGb-Av-8lq" kind="unwind" unwindAction="unwindToList:" id="ImZ-jM-sdt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HWD-qC-TkK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="vGb-Av-8lq" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2405" y="-556"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zb1-Us-dWW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T3k-7U-KYj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SD0-Wm-ffw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="SIs-bP-guY" kind="relationship" relationship="rootViewController" id="Chf-wp-jom"/>
+                        <segue destination="YSa-9O-BGX" kind="relationship" relationship="rootViewController" id="xGm-oN-rHH"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2TQ-LM-3jW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qiU-gV-2dm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2073" y="-408"/>
+            <point key="canvasLocation" x="1879" y="-556"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
