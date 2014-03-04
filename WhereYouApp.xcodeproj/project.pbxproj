@@ -10,7 +10,7 @@
 		30DA4A8718C31B1B006E6F2C /* WYAAddFriendName.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DA4A8618C31B1B006E6F2C /* WYAAddFriendName.m */; };
 		30DA4A8A18C31C92006E6F2C /* WYAFriendListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DA4A8918C31C92006E6F2C /* WYAFriendListViewController.m */; };
 		30DA4A8D18C31FDA006E6F2C /* WYAFriendName.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DA4A8C18C31FDA006E6F2C /* WYAFriendName.m */; };
-		639904AF18BD807F0074BB69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639904AE18BD807F0074BB69 /* Main.storyboard */; };
+		639904AF18BD807F0074BB69 /* Main1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639904AE18BD807F0074BB69 /* Main1.storyboard */; };
 		639904B118BE64BA0074BB69 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639904B018BE64BA0074BB69 /* MapKit.framework */; };
 		63E534CF18BD5D7100F14680 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E534CE18BD5D7100F14680 /* Foundation.framework */; };
 		63E534D118BD5D7200F14680 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E534D018BD5D7200F14680 /* CoreGraphics.framework */; };
@@ -46,7 +46,7 @@
 		30DA4A8918C31C92006E6F2C /* WYAFriendListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYAFriendListViewController.m; sourceTree = "<group>"; };
 		30DA4A8B18C31FDA006E6F2C /* WYAFriendName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYAFriendName.h; sourceTree = "<group>"; };
 		30DA4A8C18C31FDA006E6F2C /* WYAFriendName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYAFriendName.m; sourceTree = "<group>"; };
-		639904AE18BD807F0074BB69 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		639904AE18BD807F0074BB69 /* Main1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main1.storyboard; sourceTree = "<group>"; };
 		639904B018BE64BA0074BB69 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		63E534CB18BD5D7100F14680 /* WhereYouApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereYouApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E534CE18BD5D7100F14680 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,7 +98,7 @@
 		63E534C218BD5D7100F14680 = {
 			isa = PBXGroup;
 			children = (
-				639904AE18BD807F0074BB69 /* Main.storyboard */,
+				639904AE18BD807F0074BB69 /* Main1.storyboard */,
 				30DA4A8B18C31FDA006E6F2C /* WYAFriendName.h */,
 				30DA4A8C18C31FDA006E6F2C /* WYAFriendName.m */,
 				30DA4A8818C31C92006E6F2C /* WYAFriendListViewController.h */,
@@ -251,7 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				639904AF18BD807F0074BB69 /* Main.storyboard in Resources */,
+				639904AF18BD807F0074BB69 /* Main1.storyboard in Resources */,
 				63E534DB18BD5D7200F14680 /* InfoPlist.strings in Resources */,
 				63E534E618BD5D7200F14680 /* Images.xcassets in Resources */,
 			);
