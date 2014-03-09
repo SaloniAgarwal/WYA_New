@@ -109,7 +109,7 @@ longer invite you to events or groups or add you  as a friend.</string>
                                 <rect key="frame" x="20" y="133" width="227" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
                                     <action selector="dismissKeyboardBlock:" destination="C8e-Yu-dKW" eventType="editingDidEndOnExit" id="Dg7-nN-eBc"/>
                                 </connections>
@@ -199,7 +199,7 @@ longer invite you to events or groups or add you  as a friend.</string>
                                 <rect key="frame" x="20" y="92" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
                                     <action selector="dismissKeyboardCurrent:" destination="CHH-D9-bqS" eventType="editingDidEndOnExit" id="QVN-YL-9a7"/>
                                 </connections>
@@ -208,7 +208,7 @@ longer invite you to events or groups or add you  as a friend.</string>
                                 <rect key="frame" x="20" y="159" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                 <connections>
                                     <action selector="dismissKeyboardNew:" destination="CHH-D9-bqS" eventType="editingDidEndOnExit" id="QtT-gQ-bYO"/>
                                 </connections>
@@ -217,7 +217,7 @@ longer invite you to events or groups or add you  as a friend.</string>
                                 <rect key="frame" x="20" y="188" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                 <connections>
                                     <action selector="dissmissKeyboardRetype:" destination="CHH-D9-bqS" eventType="editingDidEndOnExit" id="Yyl-5o-8Tv"/>
                                 </connections>
@@ -299,7 +299,7 @@ longer invite you to events or groups or add you  as a friend.</string>
                                 <rect key="frame" x="20" y="90" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
                                     <action selector="dismissKeyboard:" destination="ahK-qE-6eb" eventType="editingDidEndOnExit" id="074-pM-oYP"/>
                                 </connections>

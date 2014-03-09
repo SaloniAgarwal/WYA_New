@@ -105,6 +105,12 @@
     [tableView reloadData];
 }
 
+-(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return @"Leave";
+}
+
+
 
 
 /*
