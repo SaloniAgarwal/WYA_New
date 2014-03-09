@@ -1,45 +1,18 @@
 //
-//  WYAGroupsViewController.m
+//  WYAfreeViewController.m
 //  WhereYouApp
 //
-//  Created by Saloni Agarwal on 3/1/14.
+//  Created by Saloni Agarwal on 3/7/14.
 //  Copyright (c) 2014 Timothy Chu. All rights reserved.
 //
 
-#import "WYAGroupsViewController.h"
-#import "WYAGroups.h"
-#import "WYAAddGroupsViewController.h"
+#import "WYAfreeViewController.h"
 
-@interface WYAGroupsViewController ()
-
-@property NSMutableArray *groupNames;
+@interface WYAfreeViewController ()
 
 @end
 
-@implementation WYAGroupsViewController
-
-- (void)loadInitialData
-{
-    WYAGroups *group1 = [[WYAGroups alloc] init];
-    group1.groupName = @"Hello";
-    [self.groupNames addObject:group1];
-    
-    WYAGroups *group2 = [[WYAGroups alloc] init];
-    group2.groupName = @"Picnic";
-    [self.groupNames addObject:group2];
-}
-
-- (IBAction)unwindToGroups:(UIStoryboardSegue *)segue
-{
-   WYAAddGroupsViewController *source = [segue sourceViewController];
-    WYAGroups *group = source.Group;
-    if (group != nil)
-    {
-        [self.groupNames addObject:group];
-        [self.tableView reloadData];
-    }
-
-}
+@implementation WYAfreeViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -53,10 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.groupNames = [[NSMutableArray alloc] init];
-    [self loadInitialData];
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -75,37 +44,27 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [self.groupNames count];
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"ListPrototypeCell";
+    static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    WYAGroups *groupName = [self.groupNames objectAtIndex:indexPath.row];
-    cell.textLabel.text = groupName.groupName;
+    // Configure the cell...
     
     return cell;
 }
-
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Remove the row from data model
-    [self.groupNames removeObjectAtIndex:indexPath.row];
-    
-    // Request table view to reload
-    [tableView reloadData];
-}
-
-
 
 /*
 // Override to support conditional editing of the table view.

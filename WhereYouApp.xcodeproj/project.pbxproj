@@ -32,6 +32,12 @@
 		F917F4D418C29E6A008302EC /* WYAAddGroupsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F917F4D318C29E6A008302EC /* WYAAddGroupsViewController.m */; };
 		F917F4D718C29FAB008302EC /* WYAGroupsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F917F4D618C29FAB008302EC /* WYAGroupsViewController.m */; };
 		F917F4DA18C2A2B3008302EC /* WYAGroups.m in Sources */ = {isa = PBXBuildFile; fileRef = F917F4D918C2A2B3008302EC /* WYAGroups.m */; };
+		F98E178918CA952B00F07A90 /* WYAPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98E178818CA952B00F07A90 /* WYAPasswordViewController.m */; };
+		F98E178C18CA95A700F07A90 /* WYABlockUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98E178B18CA95A700F07A90 /* WYABlockUserViewController.m */; };
+		F98E179218CBA5FB00F07A90 /* WYAAddBlockUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98E179118CBA5FB00F07A90 /* WYAAddBlockUserViewController.m */; };
+		F98E179518CBA72000F07A90 /* WYABlockUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = F98E179418CBA72000F07A90 /* WYABlockUsers.m */; };
+		F98E179B18CC2FB400F07A90 /* password2-64.png in Resources */ = {isa = PBXBuildFile; fileRef = F98E179A18CC2FB400F07A90 /* password2-64.png */; };
+		F98E179D18CC307400F07A90 /* remove_user-128.png in Resources */ = {isa = PBXBuildFile; fileRef = F98E179C18CC307400F07A90 /* remove_user-128.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +87,16 @@
 		F917F4D618C29FAB008302EC /* WYAGroupsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYAGroupsViewController.m; sourceTree = "<group>"; };
 		F917F4D818C2A2B3008302EC /* WYAGroups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYAGroups.h; sourceTree = "<group>"; };
 		F917F4D918C2A2B3008302EC /* WYAGroups.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYAGroups.m; sourceTree = "<group>"; };
+		F98E178718CA952B00F07A90 /* WYAPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYAPasswordViewController.h; sourceTree = SOURCE_ROOT; };
+		F98E178818CA952B00F07A90 /* WYAPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYAPasswordViewController.m; sourceTree = SOURCE_ROOT; };
+		F98E178A18CA95A700F07A90 /* WYABlockUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYABlockUserViewController.h; sourceTree = SOURCE_ROOT; };
+		F98E178B18CA95A700F07A90 /* WYABlockUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYABlockUserViewController.m; sourceTree = SOURCE_ROOT; };
+		F98E179018CBA5FB00F07A90 /* WYAAddBlockUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WYAAddBlockUserViewController.h; path = ../WYAAddBlockUserViewController.h; sourceTree = "<group>"; };
+		F98E179118CBA5FB00F07A90 /* WYAAddBlockUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WYAAddBlockUserViewController.m; path = ../WYAAddBlockUserViewController.m; sourceTree = "<group>"; };
+		F98E179318CBA72000F07A90 /* WYABlockUsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYABlockUsers.h; sourceTree = SOURCE_ROOT; };
+		F98E179418CBA72000F07A90 /* WYABlockUsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYABlockUsers.m; sourceTree = SOURCE_ROOT; };
+		F98E179A18CC2FB400F07A90 /* password2-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "password2-64.png"; path = "../../../../Downloads/password2/password2-64.png"; sourceTree = "<group>"; };
+		F98E179C18CC307400F07A90 /* remove_user-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "remove_user-128.png"; path = "../../../../Downloads/remove_user/remove_user-128.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +162,14 @@
 			isa = PBXGroup;
 			children = (
 				63122B4018C68A1A0084E969 /* Main.storyboard */,
+				F98E179C18CC307400F07A90 /* remove_user-128.png */,
+				F98E179A18CC2FB400F07A90 /* password2-64.png */,
+				F98E178A18CA95A700F07A90 /* WYABlockUserViewController.h */,
+				F98E178B18CA95A700F07A90 /* WYABlockUserViewController.m */,
+				F98E179018CBA5FB00F07A90 /* WYAAddBlockUserViewController.h */,
+				F98E179118CBA5FB00F07A90 /* WYAAddBlockUserViewController.m */,
+				F98E178718CA952B00F07A90 /* WYAPasswordViewController.h */,
+				F98E178818CA952B00F07A90 /* WYAPasswordViewController.m */,
 				63827DF118C2CC4F009F05BF /* WYAMapViewController.h */,
 				63827DF218C2CC4F009F05BF /* WYAMapViewController.m */,
 				63827DF318C2CC4F009F05BF /* WYAUserAnnotation.h */,
@@ -162,6 +186,8 @@
 				F917F4D618C29FAB008302EC /* WYAGroupsViewController.m */,
 				F917F4D818C2A2B3008302EC /* WYAGroups.h */,
 				F917F4D918C2A2B3008302EC /* WYAGroups.m */,
+				F98E179318CBA72000F07A90 /* WYABlockUsers.h */,
+				F98E179418CBA72000F07A90 /* WYABlockUsers.m */,
 				63E534DF18BD5D7200F14680 /* WYAAppDelegate.h */,
 				63E534E018BD5D7200F14680 /* WYAAppDelegate.m */,
 				63E534E518BD5D7200F14680 /* Images.xcassets */,
@@ -278,6 +304,8 @@
 			files = (
 				63122B4118C68A1A0084E969 /* Main.storyboard in Resources */,
 				63E534DB18BD5D7200F14680 /* InfoPlist.strings in Resources */,
+				F98E179D18CC307400F07A90 /* remove_user-128.png in Resources */,
+				F98E179B18CC2FB400F07A90 /* password2-64.png in Resources */,
 				63E534E618BD5D7200F14680 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,15 +327,19 @@
 			files = (
 				F917F4D418C29E6A008302EC /* WYAAddGroupsViewController.m in Sources */,
 				63827DF618C2CC4F009F05BF /* WYAUserAnnotation.m in Sources */,
+				F98E178C18CA95A700F07A90 /* WYABlockUserViewController.m in Sources */,
 				30DA4A8D18C31FDA006E6F2C /* WYAFriendName.m in Sources */,
+				F98E179518CBA72000F07A90 /* WYABlockUsers.m in Sources */,
 				30DA4A8A18C31C92006E6F2C /* WYAFriendListViewController.m in Sources */,
 				30DA4A8718C31B1B006E6F2C /* WYAAddFriendName.m in Sources */,
 				63E534E118BD5D7200F14680 /* WYAAppDelegate.m in Sources */,
 				63827DF518C2CC4F009F05BF /* WYAMapViewController.m in Sources */,
 				63E534E418BD5D7200F14680 /* WhereYouApp.xcdatamodeld in Sources */,
 				F917F4D718C29FAB008302EC /* WYAGroupsViewController.m in Sources */,
+				F98E178918CA952B00F07A90 /* WYAPasswordViewController.m in Sources */,
 				63E534DD18BD5D7200F14680 /* main.m in Sources */,
 				F917F4DA18C2A2B3008302EC /* WYAGroups.m in Sources */,
+				F98E179218CBA5FB00F07A90 /* WYAAddBlockUserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
